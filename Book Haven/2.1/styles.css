@@ -1,0 +1,1330 @@
+/* ============================================
+   Book Haven - Main Stylesheet
+   Color Palette 1 | Bookish Black Font | Typography Option 3
+   ============================================ */
+
+/* CSS Variables */
+:root {
+    /* Color Palette 2 */
+    --midnight-manuscript: #2E2E4E;
+    --regal-quill: #5C2E5C;
+    --literature-blue: #3F5461;
+    --book-worm: #3E5641;
+    --romantic-red: #742C36;
+
+    /* Primary color alias */
+    --primary-color: #2E2E4E;
+
+    /* Font Color */
+    --bookish-black: #131C26;
+
+    /* Utility Colors */
+    --white: #FFFFFF;
+    --gray-light: #E5E5E5;
+    --gray-medium: #8A8A8A;
+    --gray-placeholder: #9F9F9F;
+
+    /* Typography Option 3 */
+    --font-display: 'Courier New', Courier, monospace;
+    --font-title-large: 'Georgia', serif;
+    --font-title: 'Arial', sans-serif;
+    --font-subtitle: 'Arial', sans-serif;
+    --font-body-large: 'Comic Sans MS', cursive;
+    --font-body-strong: 'Arial', sans-serif;
+    --font-body: 'Arial', sans-serif;
+    --font-caption: 'Calibri', sans-serif;
+}
+
+/* ============================================
+   Reset & Base Styles
+   ============================================ */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--bookish-black);
+    background-color: var(--white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+h1 {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: var(--font-title-large);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h3 {
+    font-family: var(--font-title);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+h4 {
+    font-family: var(--font-subtitle);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.caption {
+    font-family: var(--font-caption);
+    font-size: 11px;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: var(--font-body-strong);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--midnight-manuscript);
+    color: var(--white);
+    border-color: var(--midnight-manuscript);
+}
+
+.btn-primary:hover {
+    background-color: var(--bookish-black);
+    border-color: var(--bookish-black);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--bookish-black);
+    border-color: var(--bookish-black);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bookish-black);
+    color: var(--white);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-add-cart {
+    background-color: transparent;
+    color: var(--bookish-black);
+    border: 1px solid var(--bookish-black);
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.btn-add-cart:hover {
+    background-color: var(--midnight-manuscript);
+    color: var(--white);
+    border-color: var(--midnight-manuscript);
+}
+
+/* ============================================
+   Header & Navigation
+   ============================================ */
+.header {
+    background-color: var(--midnight-manuscript);
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: none;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-title);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.logo-icon {
+    font-size: 20px;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.nav-desktop {
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--white);
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--white);
+    opacity: 1;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cart-btn {
+    padding: 8px 20px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: var(--white);
+    color: var(--midnight-manuscript);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--white);
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--white);
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    bottom: -8px;
+}
+
+.nav-mobile {
+    display: none;
+    padding: 16px 0;
+    background-color: var(--midnight-manuscript);
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-links-mobile a {
+    font-size: 16px;
+    padding: 8px 0;
+    color: var(--white);
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--literature-blue);
+    max-width: none;
+}
+
+.hero > * {
+    max-width: 600px;
+}
+
+.hero-content {
+    margin-left: auto;
+    padding-left: 24px;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .btn-primary {
+    background-color: var(--white);
+    color: var(--literature-blue);
+    border-color: var(--white);
+}
+
+.hero .btn-primary:hover {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.hero-image .image-placeholder,
+.image-placeholder {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero variations */
+.hero-club {
+    background-color: var(--midnight-manuscript);
+}
+
+.hero-club .hero-content h1,
+.hero-club .hero-content p {
+    color: var(--white);
+}
+
+.hero-club .btn-secondary {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.hero-club .btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--midnight-manuscript);
+}
+
+.hero-about {
+    background-color: var(--midnight-manuscript);
+}
+
+.hero-about .hero-content h1,
+.hero-about .hero-content p {
+    color: var(--white);
+}
+
+.hero-about .btn-secondary {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.hero-about .btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--midnight-manuscript);
+}
+
+/* ============================================
+   Top Books Section (Homepage)
+   ============================================ */
+.top-books {
+    padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    max-width: none;
+}
+
+.top-books .section-header,
+.top-books .books-grid {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    margin-bottom: 16px;
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--gray-medium);
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.book-card {
+    text-align: left;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(46, 46, 78, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(46, 46, 78, 0.15);
+}
+
+.book-card .book-image {
+    background-color: var(--gray-light);
+    height: 200px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.book-card .book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-image img {
+    transform: scale(1.05);
+}
+
+.book-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.book-card p {
+    font-size: 14px;
+    color: var(--gray-medium);
+    margin-bottom: 12px;
+}
+
+.book-card .btn-secondary {
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+/* ============================================
+   Book Club Promo Section (Homepage)
+   ============================================ */
+.book-club-promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 24px;
+    max-width: none;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--regal-quill);
+}
+
+.book-club-promo > * {
+    max-width: 600px;
+}
+
+.promo-content {
+    margin-left: auto;
+    padding-left: 24px;
+}
+
+.promo-content h2 {
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.promo-content p {
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.promo-content .btn-secondary {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.promo-content .btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--regal-quill);
+}
+
+.promo-image .image-placeholder {
+    height: 350px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   Club Books Section (Book Club Page)
+   ============================================ */
+.club-books {
+    padding: 60px 24px;
+    background-color: #F8F8F8;
+}
+
+.club-books-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.club-books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.club-book-card .book-image-placeholder {
+    background-color: var(--midnight-manuscript);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: 20px;
+}
+
+/* ============================================
+   Book of the Month (Book Club Page)
+   ============================================ */
+.book-of-month {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.month-image .image-placeholder {
+    background-color: var(--midnight-manuscript);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    gap: 20px;
+}
+
+.month-image .image-placeholder span {
+    font-family: var(--font-title);
+    font-size: 24px;
+}
+
+.btn-overlay {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.btn-overlay:hover {
+    background-color: var(--white);
+    color: var(--midnight-manuscript);
+}
+
+.month-content h2 {
+    margin-bottom: 16px;
+}
+
+.month-content p {
+    color: var(--gray-medium);
+}
+
+/* ============================================
+   Testimonials (Book Club Page)
+   ============================================ */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #F8F8F8;
+    padding: 30px;
+    border-left: 4px solid var(--midnight-manuscript);
+}
+
+.testimonial-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.testimonial-card p {
+    color: var(--gray-medium);
+    margin-bottom: 16px;
+}
+
+.read-more {
+    font-size: 14px;
+    color: var(--bookish-black);
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    color: var(--midnight-manuscript);
+}
+
+/* ============================================
+   About Page Sections
+   ============================================ */
+.about-description {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #F8F8F8;
+    max-width: none;
+}
+
+.about-description > * {
+    max-width: 1200px;
+}
+
+.about-image .image-placeholder {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 10px 40px rgba(46, 46, 78, 0.15);
+}
+
+.about-text p {
+    color: var(--gray-medium);
+}
+
+/* Hours and Contact Side by Side Container */
+.hours-contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Hours Section */
+.hours-section {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+    text-align: center;
+}
+
+.hours-section h2 {
+    margin-bottom: 30px;
+}
+
+.hours-card {
+    background-color: var(--white);
+    border: none;
+    padding: 30px 40px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(46, 46, 78, 0.1);
+}
+
+.hours-card h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.hours-card ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.hours-card li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Contact Form */
+.contact-section {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--gray-light);
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--bookish-black);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--gray-placeholder);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--midnight-manuscript);
+}
+
+/* ============================================
+   Gallery Page
+   ============================================ */
+.gallery-main {
+    position: relative;
+}
+
+.gallery-header {
+    padding: 0;
+}
+
+.gallery-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 24px;
+    max-width: none;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--book-worm);
+}
+
+.gallery-hero > * {
+    max-width: 600px;
+}
+
+.gallery-hero .hero-content {
+    margin-left: auto;
+    padding-left: 24px;
+}
+
+.gallery-hero .hero-content h1 {
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.gallery-hero .hero-content p {
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery-hero .btn-secondary {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.gallery-hero .btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--book-worm);
+}
+
+.gallery-hero .image-placeholder {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 280px;
+    background-color: var(--white);
+    padding: 24px;
+    border: 1px solid var(--gray-light);
+    display: none;
+}
+
+.cart-sidebar.active {
+    display: block;
+}
+
+.cart-content h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.cart-content p {
+    font-size: 14px;
+    color: var(--gray-medium);
+    margin-bottom: 16px;
+}
+
+/* Product Gallery */
+.product-gallery {
+    padding: 40px 24px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    max-width: none;
+}
+
+.product-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.product-cell {
+    vertical-align: top;
+    width: 33.33%;
+}
+
+.product-card {
+    text-align: center;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(46, 46, 78, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 30px rgba(46, 46, 78, 0.15);
+}
+
+.product-image {
+    background-color: var(--gray-light);
+    height: 180px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Cart Modal */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-modal.active {
+    display: flex;
+}
+
+.cart-modal-content {
+    background-color: var(--white);
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.cart-modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    min-height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid var(--gray-light);
+    padding: 16px;
+}
+
+.cart-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.cart-actions .btn {
+    flex: 1;
+}
+
+.cart-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--gray-medium);
+}
+
+.cart-modal-close:hover {
+    color: var(--bookish-black);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.footer {
+    background-color: var(--midnight-manuscript);
+    padding: 60px 24px 20px;
+    margin-top: 60px;
+    color: var(--white);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-title);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.footer-logo .logo-img {
+    filter: brightness(0) invert(1);
+}
+
+.footer-subscribe h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--white);
+}
+
+.footer-subscribe p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.social-links a {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--white);
+    color: var(--midnight-manuscript);
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   Responsive Design - Tablet
+   ============================================ */
+@media (max-width: 992px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .hero > * {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .promo-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .book-club-promo > * {
+        max-width: 100%;
+    }
+
+    .gallery-hero > * {
+        max-width: 100%;
+    }
+
+    .gallery-hero .hero-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book-club-promo {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-image {
+        order: -1;
+    }
+
+    .club-books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book-of-month {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .about-description {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image .image-placeholder {
+        margin: 0 auto;
+    }
+
+    .hours-contact-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .gallery-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .cart-sidebar {
+        display: none !important;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+    }
+}
+
+/* ============================================
+   Responsive Design - Mobile
+   ============================================ */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-mobile.active {
+        display: block;
+    }
+
+    .cart-btn {
+        display: none;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .book-card .book-image {
+        height: 150px;
+    }
+
+    .club-books-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .club-book-card .book-image-placeholder {
+        height: 120px;
+        font-size: 16px;
+    }
+
+    .book-of-month {
+        padding: 40px 20px;
+    }
+
+    .month-image .image-placeholder {
+        height: 300px;
+    }
+
+    .testimonials {
+        padding: 40px 20px;
+    }
+
+    .hours-card {
+        width: 100%;
+        padding: 24px;
+    }
+
+    /* Product table to grid on mobile */
+    .product-table,
+    .product-table tbody,
+    .product-table tr,
+    .product-table td {
+        display: block;
+    }
+
+    .product-table tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .product-cell {
+        width: 100%;
+    }
+
+    .product-image {
+        height: 140px;
+    }
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+/* ============================================
+   Responsive Design - Small Mobile
+   ============================================ */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .header {
+        padding: 12px 16px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 30px 16px;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-card .book-image {
+        height: 200px;
+    }
+
+    .club-books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .club-book-card .book-image-placeholder {
+        height: 150px;
+    }
+
+    .product-table tr {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+}

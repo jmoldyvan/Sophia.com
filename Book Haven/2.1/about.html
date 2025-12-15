@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../Assets/Client3_LogoPalette2_2E2E4E.png" alt="Book Haven Logo" class="logo-img">
+                <span class="logo-text">BOOK HAVEN</span>
+            </div>
+            <nav class="nav-desktop">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bookclub.html">Book Club</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="gallery.html" class="cart-btn">Cart</a>
+                <button class="mobile-menu-btn" aria-label="Open menu">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile">
+            <ul class="nav-links-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bookclub.html">Book Club</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero hero-about">
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#contact" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder"></div>
+            </div>
+        </section>
+
+        <!-- About Description -->
+        <section class="about-description">
+            <div class="about-image">
+                <div class="image-placeholder"></div>
+            </div>
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+        </section>
+
+        <!-- Hours and Contact Side by Side -->
+        <section class="hours-contact-section">
+            <!-- Hours of Operation -->
+            <div class="hours-section">
+                <h2>Hours</h2>
+                <div class="hours-card">
+                    <h3>Hours of Operation:</h3>
+                    <ul>
+                        <li>Monday–Friday: 9 a.m. to 8 p.m.</li>
+                        <li>Saturday: 10 a.m. to 6 p.m.</li>
+                        <li>Sunday: 11 a.m. to 5 p.m.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../Assets/Client3_LogoPalette2_2E2E4E.png" alt="Book Haven Logo" class="logo-img">
+                    <span class="logo-text">BOOK HAVEN</span>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>Ready to Start Reading?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Email</p>
+                    <p>555-555-5555</p>
+                    <p>123 Fake Street USA</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">○</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Books</h4>
+                    <ul>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="about.html">Hours</a></li>
+                        <li><a href="gallery.html">Book Store</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024</p>
+            <p>Privacy • Terms</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

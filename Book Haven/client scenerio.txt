@@ -1,0 +1,52 @@
+Introduction to Web Development: Client Scenario and Criteria
+Author: Sophia
+PDF Version
+ what's covered
+This information will support the Touchstone, specifically:
+
+1. Client Scenario
+2. Client Expectations
+2a. Requirement 1: Create Four Distinct Webpages
+2b. Requirement 2: Create a Web Form
+2c. Requirement 3: Create a Shopping Cart
+3. Approved Client List
+1. Client Scenario
+You have been granted a contract to build a website for a client within your local town. For this Touchstone project, you will select one client from an approved list for which you will create a website. You will apply what you have learned throughout this course to ensure that the site follows good user interface design practices and incorporates accessibility measures whenever possible.
+
+2. Client Expectations
+The client’s website must include four webpages, a web form with connectivity to web storage, and a shopping cart. Detailed requirements are listed below.
+
+2a. Requirement 1: Create Four Distinct Webpages
+The Homepage
+The Gallery page
+The About Us page
+A custom webpage
+All the pages should contain a header and a footer section, where the following requirements should be met:
+The header should include the client logo, a webpage title, and a functional navigation bar.
+The footer should include a subscribe-to-newsletter feature, social media links, and navigation links to other webpages.
+The Homepage should include the following:
+Client highlights
+Shopping promos
+Product/item images
+Shopping perks
+Categories of products
+The Gallery page should include the following:
+A “View Shopping Cart” button
+Items/services sold by the client in a tabular format
+An image, a brief description, and an “Add to Cart” button for each item
+The About Us page should include the following:
+A description of the client, including the business hours
+A form for client feedback and custom orders
+The custom page can include the following:
+Customer testimonials
+Community involvements
+Events and collaborations
+2b. Requirement 2: Create a Web Form
+On the About Us page, connectivity to web storage will be used to process a web form for client feedback and custom order creation.
+
+2c. Requirement 3: Create a Shopping Cart
+On the Gallery page, there will be a shopping cart with the following features:
+
+An “Add to Cart” button at the bottom of each image will let the user add that item to the cart.
+After the item is added to the cart, the user will receive a dialog message that says, “Item added.”
+A “View Cart” button at the top left/right corner of the page will let the user view the currently added items in a modal window. The “View Cart” modal window will have two buttons, one for “Clear Cart” and another for “Process Order.” The “Clear Cart” button will clear the items in the cart, and the “Process Order” button will display a dialog message that says, “Thank you for your order.”

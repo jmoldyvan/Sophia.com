@@ -1,0 +1,137 @@
+Introduction to Web Development Client 3: Book Haven Bookstore
+Author: Sophia
+PDF Version
+ what's covered
+This information includes details about Client 3, Book Haven Bookstore. If you select Book Haven Bookstore as your client, you will use this information to support Touchstone tasks and the Touchstone, specifically:
+
+1. About Client 3: Book Haven Bookstore
+2. Choose a Color Palette and Matching Logo
+2a. Color Palette 1
+2b. Color Palette 2
+2c. Color Palette 3
+3. Choose a Font Color
+3a. Font Color 1
+3b. Font Color 2
+3c. Font Color 3
+4. Choose the Typography
+4a. Typography Option 1
+4b. Typography Option 2
+4c. Typography Option 3
+5. Gallery Image Files
+1. About Client 3: Book Haven Bookstore
+Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books, magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and a love for reading, it is embarking on the creation of an online presence that mirrors its dedication to the world of words. Serving a broad audience of book lovers and knowledge seekers, its central goal is to amplify its visibility, cultivate a vibrant literary community, and simplify the process of book inquiries and purchases. Its target audience comprises avid readers, students, and individuals in search of high-quality reading materials and office essentials. Book Haven Bookstore’s website theme revolves around celebrating the written word, creating an inviting digital space that encourages literary discovery, and supporting intellectual growth.
+
+Hours of Operation:
+
+Monday–Friday: 9 a.m. to 8 p.m.
+Saturday: 10 a.m. to 6 p.m.
+Sunday: 11 a.m. to 5 p.m.
+2. Choose a Color Palette and Matching Logo
+The client is considering three different color palette options and has asked you to recommend the best one for its website.
+
+ try it
+Directions: Choose one color palette from the three options presented below.
+
+1. Review the three color palette options. It is important that you use what you have learned about accessibility and web design best practices when deciding among the three options.
+2. Select one color palette to recommend to the client. You will use the colors in your chosen palette as you design the website.
+3. Once you have selected the correct color palette, you will need to download at least one of the matching client logos to use in your website design. It is important that you do not mix and match logos among color palettes.
+
+ hint
+Color codes are provided with each color palette. You will use these codes to implement your choices in your website design.
+
+ think about it
+You learned in the client scenario above that Book Haven Book Bookstore’s website theme celebrates the written word, creates an inviting digital space that encourages literary discovery, and supports intellectual growth. Which of the following color palettes meets the client’s expectations? Are all the color palettes accessible to a wide audience, including customers with visual impairments?
+
+ make the connection
+Refer back to the UI/UX Design Concepts lesson for more details on color and accessibility.
+
+2a. Color Palette 1
+Color Palette 1 contains the following colors:
+
+Book Haven Bookstore Color Palette 1 consisting of Inkwell Blue, 2E4057; Intensity Indigo, EE583F; Dusty Rose, F7B3CC; Aged Gold, C7B65E; and Parchment White, FFF7EE
+
+Matching logos are available for each color in Color Palette 1:
+
+Inkwell Blue, 2E4057	Intensity Indigo, EE583F	Dusty Rose, F7B3CC	Aged Gold, C7B65E	Parchment White, FFF7EE
+
+
+2b. Color Palette 2
+Color Palette 2 contains the following colors:
+
+Book Haven Bookstore Color Palette 2 consisting of Midnight Manuscript, 2E2E4E; Regal Quill, 5C2E5C; Literature Blue, 3F5461; Book Worm, 3E5641; and Romantic Red, 742C36
+
+Matching logos are available for each color in Color Palette 2:
+
+Midnight Manuscript, 2E2E4E	Regal Quill, 5C2E5C	Literature Blue, 3F5461	Book Worm, 3E5641	Romantic Red, 742C36
+
+
+2c. Color Palette 3
+Color Palette 3 contains the following colors:
+
+Book Haven Bookstore Color Palette 3 consisting of Lagoon Ink, 7FFFD4; Enchanted Meadow, 98FB98; Fairy Mist, AFEEEE; Celestial Fiction, 87CEEB; and Fable Mauve, D988EA
+
+Matching logos are available for each color in Color Palette 3:
+
+Lagoon Ink, 7FFFD4	Enchanted Meadow, 98FB98	Fairy Mist, AFEEEE	Celestial Fiction, 87CEEB	Fable Mauve, D988EA
+
+
+3. Choose a Font Color
+The client is considering three different font color options and has asked you to recommend the best one for its website.
+
+ try it
+Directions: Choose one font color palette from the three options presented below.
+
+1. Review the three font color options. It is important that you use what you have learned about accessibility and web design best practices when deciding among the three options.
+2. Select one font color to recommend to the client. You will use the font color you select as you design the website.
+
+ hint
+Color codes are provided with each font color. You will use these codes to implement your choices in your website design.
+
+ think about it
+Which font color works best with the color palette you selected? Are all the font colors accessible to a wide audience, including customers with visual impairments? You will need to test how the font colors work with various background colors from your chosen palette and finalize your selection prior to submitting your project.
+
+ make the connection
+Refer back to the Typography and Web Fonts lesson for more details.
+
+
+3a. Font Color 1
+Fairytale Purple, 983AAF
+
+
+3b. Font Color 2
+Bookish Black, 131C26
+
+
+3c. Font Color 3
+Vintage Paper, C1CFD6
+
+4. Choose the Typography
+The client is considering three different typography options and has asked you to recommend the best one for its website.
+
+ try it
+Directions: Choose one typography option from the three options presented below.
+
+1. Review the three typography options. It is important that you use what you have learned about fonts, accessibility, and web design best practices when deciding among the three options.
+2. Select one typography option to recommend to the client. You will use the fonts in your chosen typography option as you design the website. It is important that you do not mix and match among the typography options.
+
+ hint
+Font names and sizes are provided with each typography option. You will use this information to implement your choice in your website design.
+
+ think about it
+You learned that it is important for web designers to select fonts that are legible on-screen and align with the tone and purpose of the website. How will each font’s attributes impact the overall effectiveness of the page’s written content? Are the fonts web safe?
+
+ make the connection
+Refer back to the Typography and Web Fonts lesson for more details.
+
+4a. Typography Option 1
+Display in 40px Trebuchet MS Bold, Title Large in 30px Times New Roman Bold, Title in 25px Impact Bold, Subtitle in 15px Comic Sans MS Normal, Body Large in 20px Calibri Normal, Body Strong in 16px Roboto Bold, Body in 16px Calibri Normal, and Captions in 11px Comfortaa Normal
+
+
+4b. Typography Option 2
+
+
+Title Large in 30px Arial Bold, Title in 25px Arial Bold, Subtitle in 15px Comfortaa Normal, Body Large in 20px Calibri Normal, Body Strong in 16px Calibri Bold, Body in 16px Calibri Normal, and Captions in 11px Arial Bold
+
+
+4c. Typography Option 3
+Display in 40px Courier New Bold, Title Large in 30px Georgia Bold, Title in 25px Arial Bold, Subtitle in 15px Arial Bold, Body Large in 20px Comic Sans MS Normal, Body Strong in 16px Arial Bold, Body in 16px Arial Normal, and Captions in 11px Calibri Normal

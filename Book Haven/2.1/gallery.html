@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../Assets/Client3_LogoPalette2_2E2E4E.png" alt="Book Haven Logo" class="logo-img">
+                <span class="logo-text">BOOK HAVEN</span>
+            </div>
+            <nav class="nav-desktop">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bookclub.html">Book Club</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-btn" id="viewCartBtn">Cart</a>
+                <button class="mobile-menu-btn" aria-label="Open menu">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile">
+            <ul class="nav-links-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bookclub.html">Book Club</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-main">
+        <!-- Gallery Header -->
+        <section class="gallery-header">
+            <div class="gallery-hero">
+                <div class="hero-content">
+                    <h1>Shop Book Haven</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut.</p>
+                    <a href="#" class="btn btn-secondary" id="viewCartBtnHero">View Cart</a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Sidebar -->
+        <aside class="cart-sidebar" id="cartSidebar">
+            <div class="cart-content">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut.</p>
+                <a href="#" class="btn btn-secondary" id="viewCartSidebar">View Cart</a>
+            </div>
+        </aside>
+
+        <!-- Product Gallery -->
+        <section class="product-gallery">
+            <table class="product-table">
+                <tbody>
+                    <tr>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Book1.png" alt="Book 1">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Book 1" data-price="19.99">Add to Cart</button>
+                            </div>
+                        </td>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Book2.png" alt="Book 2">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Book 2" data-price="24.99">Add to Cart</button>
+                            </div>
+                        </td>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Book3.png" alt="Book 3">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Book 3" data-price="14.99">Add to Cart</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Magazine1.png" alt="Magazine 1">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Magazine 1" data-price="9.99">Add to Cart</button>
+                            </div>
+                        </td>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Magazine2.png" alt="Magazine 2">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Magazine 2" data-price="9.99">Add to Cart</button>
+                            </div>
+                        </td>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Magazine3.png" alt="Magazine 3">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Magazine 3" data-price="9.99">Add to Cart</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Notebook.png" alt="Notebook">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Notebook" data-price="12.99">Add to Cart</button>
+                            </div>
+                        </td>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_Stickers.png" alt="Stickers">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Stickers" data-price="4.99">Add to Cart</button>
+                            </div>
+                        </td>
+                        <td class="product-cell">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../Assets/Client3_ToteBag.png" alt="Tote Bag">
+                                </div>
+                                <button class="btn btn-add-cart" data-product="Tote Bag" data-price="29.99">Add to Cart</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be populated by JavaScript -->
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary" id="clearCartBtn">Clear Cart</button>
+                <button class="btn btn-primary" id="processOrderBtn">Process Order</button>
+            </div>
+            <button class="cart-modal-close" id="closeCartBtn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../Assets/Client3_LogoPalette2_2E2E4E.png" alt="Book Haven Logo" class="logo-img">
+                    <span class="logo-text">BOOK HAVEN</span>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>Ready to Start Reading?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Email</p>
+                    <p>555-555-5555</p>
+                    <p>123 Fake Street USA</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">○</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Books</h4>
+                    <ul>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="about.html">Hours</a></li>
+                        <li><a href="gallery.html">Book Store</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024</p>
+            <p>Privacy • Terms</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
