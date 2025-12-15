@@ -1,2 +1,27 @@
 [build]
-  publish = "Book Haven/FinalDraft"
+  publish = "Book Haven"
+
+[[redirects]]
+  from = "/"
+  to = "/FinalDraft/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/index.html"
+  to = "/FinalDraft/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/gallery.html"
+  to = "/FinalDraft/gallery.html"
+  status = 200
+
+[[redirects]]
+  from = "/bookclub.html"
+  to = "/FinalDraft/bookclub.html"
+  status = 200
+
+[[redirects]]
+  from = "/about.html"
+  to = "/FinalDraft/about.html"
+  status = 200
